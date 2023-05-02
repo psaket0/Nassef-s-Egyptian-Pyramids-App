@@ -45,19 +45,7 @@ public class PyramidApp {
                     scanner.nextLine();
                     for (Pharaoh pharaoh : pharaohs) {
                         if (pharaoh.getId() == pharaohId) {
-                            System.out.println("Pharaoh name: " + pharaoh.getName());
-                            System.out.println("Pyramid location: " + pharaoh.getPyramidLocation());
-                        }
-                    }
-                    break;
-                case "3":
-                    System.out.println("List of all pyramids and the contributors associated with them:");
-                    for (Pyramid pyramid : pyramids) {
-                        System.out.println(pyramid.getId() + ": " + pyramid.getName() + " (built by " + pyramid.getPharaohName() + ")");
-                        for (Contributor contributor : pyramid.getContributors()) {
-                            System.out.println("- " + contributor.getName() + ": " + contributor.getGold() + " " + pyramid.getCurrency());
-                        }
-                    }
+                         
                     break;
                 case "4":
                     System.out.println("Enter the pyramid id number:");
