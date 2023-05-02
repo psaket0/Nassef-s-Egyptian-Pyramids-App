@@ -79,7 +79,17 @@ public class App {
     }
     
     private static void displayPyramidInfo(Scanner scanner) {
+        System.out.print("Enter the name of the pyramid you want information on: ");
+        String pyramid = scanner.nextLine();
         
+        List<String> contributors = pyramids.get(pyramid);
+        if (contributors == null) {
+            System.out.println("Pyramid not found.");
+            return;
+        }
+        
+        System.out.println("Information for " + pyramid + ":");
+        int totalGold = 0;
         for (String contributor : contributors) {
             int gold = goldContributions.getOrDefault(contributor, 0);
             totalGold += gold;
