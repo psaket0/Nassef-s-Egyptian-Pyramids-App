@@ -32,21 +32,3 @@ public class PyramidApp {
             System.out.println("q: Quits the application");
             String input = scanner.nextLine();
             
-            switch (input) {
-                case "1":
-                    System.out.println("List of all pharaohs:");
-                    for (Pharaoh pharaoh : pharaohs) {
-                        System.out.println(pharaoh.getId() + ": " + pharaoh.getName());
-                    }
-                    break;
-                case "2":
-                    System.out.println("Enter the pharaoh id number:");
-                    int pharaohId = scanner.nextInt();
-                    scanner.nextLine();
-                    for (Pharaoh pharaoh : pharaohs) {
-                        if (pharaoh.getId() == pharaohId) {
-                         
-                    break;
-                case "4":
-                    System.out.println("Enter the pyramid id number:");
-                    int
